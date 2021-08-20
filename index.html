@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwindcss and fonts -->
+    <link rel="stylesheet" href="stylesheets/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styling -->
+    <style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .selected {
+        border: 1px solid purple;
+      }
+    </style>
+    <title>Canva</title>
+  </head>
+  <body>
+    <main>
+      <div class="container mx-auto px-4 md:px-2">
+        <div class="grid grid-cols-2">
+          <!-- Image -->
+          <div class="p-5 border rounded border-gray-200 m-5">
+            <div class="h-96 w-full">
+              <img
+                src="1.jpg"
+                id="art"
+                class="w-full rounded h-full object-cover"
+                alt=""
+              />
+            </div>
+            <div class="flex justify-center items-center mt-10">
+              <div
+                class="
+                  p-3
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600 hover:shadow-lg
+                  rounded
+                  selected
+                "
+                id="first"
+              >
+                <img src="1.jpg" class="w-10 h-10" alt="" />
+              </div>
+              <div
+                class="
+                  p-3
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600
+                  rounded
+                "
+                id="second"
+              >
+                <img src="2.jpg" class="w-10 h-10" alt="" />
+              </div>
+              <div
+                class="
+                  p-3
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600
+                  rounded
+                "
+                id="third"
+              >
+                <img src="3.jpg" class="w-10 h-10" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Options -->
+          <div class="mt-10 max-w-lg mx-auto">
+            <div id="text">
+              <span>
+                Others have already pointed out how either can be correct depending on context However, I strongly discourage using “What this picture is about” and would instead opt for a simple colon. Really intensifies or places emphasis on the words beautiful.
+            </span>
+          </div>
+          <div>
+            <h3 class="text-2xl mt-2">
+              Price: $<span id="price">500</span>
+            </h3>
+          </div>
+            
+            <div class="mt-20 me-3">
+              <span id="n-shipping" class="bg-gray-100 p-3
+              my-2
+              border
+              cursor-pointer
+              hover:border-purple-600 hover:shadow-lg
+              rounded
+              selected">Free shiping: $10</span>
+              <span id="e-shipping" class="bg-gray-100 p-3
+              my-2
+              border
+              cursor-pointer
+              hover:border-purple-600
+              rounded
+            "> Express shiping: $30</span>
+            </div>
+            <div class="mt-20 text-2xl">
+              <p class="pb-4">Shiping: $<span id="shipping-price">0</span></p>
+              <p>Total:  $<span id="total-price">500</span></p>
+            </div>
+            <div>
+              <button class="mt-10
+              p-3
+              border
+              cursor-pointer
+              hover:border-purple-600 hover:shadow-lg
+              rounded
+              selected">Buy Now</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
